@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEXORA | Gadgets Futuristas</title>
+
+    <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produto.css">
+
+    <!-- Arquivos JavaScript -->
+    <script src="products.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <h1>NEXORA</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+
+        <a href="#produto.css">Produtos</a>
+
+        <a href="carrinho.html">
+            Carrinho (<span id="cart-count">0</span>)
+        </a>
+    </nav>
+
+</header>
+    
+<section class="catalogo" id="produtos">
+
+    <div class="catalogo-header">
+
+        <div>
+            <span class="tag">NOSSO CATÁLOGO</span>
+            <h2>Produtos em destaque</h2>
+        </div>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Buscar produto..."
+        >
+
+    </div>
+
+    <div class="filtros">
+
+        <button class="filter-btn active" data-category="Todos">
+            Todos
+        </button>
+
+        <button class="filter-btn" data-category="Wearables">
+            Wearables
+        </button>
+
+        <button class="filter-btn" data-category="Casa Inteligente">
+            Casa Inteligente
+        </button>
+
+        <button class="filter-btn" data-category="Áudio">
+            Áudio
+        </button>
+
+    </div>
+
+    <div id="product-list" class="product-grid"></div>
+
+</section>
+
+<script src="products.js"></script>
+<script src="cart.js"></script>
+<script src="main.js"></script>

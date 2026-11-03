@@ -1,0 +1,130 @@
+
+.catalogo {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.catalogo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.catalogo-header h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background: #151a22;
+    color: white;
+    border: 1px solid #303844;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #b6ff4a;
+    color: #080a0f;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #121720;
+    border: 1px solid #252d38;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #b6ff4a;
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.product-category {
+    color: #b6ff4a;
+    font-size: 12px;
+}
+
+.product-card h3 {
+    margin: 12px 0;
+    color: white;
+}
+
+.product-description {
+    color: #aab2bd;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 65px;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: white;
+}
+
+.add-cart {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #b6ff4a;
+    color: #080a0f;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: #a0e638;
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
